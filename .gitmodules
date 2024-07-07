@@ -1,6 +1,6 @@
 [submodule "vim-conf"]
-	path = vim-conf
+	path = .config/vim
 	url = https://github.com/nextredo/vim-conf
 [submodule "nvim-conf"]
-	path = nvim-conf
+	path = .config/nvim
 	url = https://github.com/nextredo/nvim-conf
