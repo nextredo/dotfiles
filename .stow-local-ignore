@@ -1,0 +1,5 @@
+\.git
+^/README.*
+^/LICENSE.*
+vim-conf
+scripts
