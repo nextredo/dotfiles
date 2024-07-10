@@ -12,7 +12,7 @@ Ensure the following are installed:
   - alacritty-theme
 - gdb
 
-### Other
+### Font
 
 - [Terminess Nerd Font][term-font]
 
@@ -24,6 +24,17 @@ stow .
 ```
 
 ## Extra config
+
+### Font config
+
+```bash
+# Ensure your terminal is using the custom fontconfig
+# Flush the font cache
+fc-cache -f -v
+
+# Test string for the terminal
+echo "♥❤️👍😍🙊🥱🥺✨✅🎊🏄⚠️"
+```
 
 ### Terminal
 
@@ -40,11 +51,11 @@ stty -ixon
 
 ### VSCode
 
-- Synced through Microsoft account
+- Uses vscode settings sync
 
 ### Oh My zsh
 
-- Only one I've found to work with `conda`
+- Only theme I've found plays well with `conda`
 
 ```zsh
 ZSH_THEME="ys"
@@ -72,9 +83,6 @@ sudo keyd reload
 ## References
 
 >[Dreams of Autonomy - Stow][vid1]
-
-- `~/dotfiles`
-  - Replicate layout of `~` in here
 
 <!-- Links -->
 [vid1]: https://www.youtube.com/watch?v=y6XCebnB9gs&ab_channel=DreamsofAutonomy
