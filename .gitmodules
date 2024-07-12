@@ -4,3 +4,7 @@
 [submodule "nvim-conf"]
 	path = .config/nvim
 	url = https://github.com/nextredo/nvim-conf
+[submodule ".config/nvim"]
+	branch = main
+[submodule ".config/vim"]
+	branch = master
