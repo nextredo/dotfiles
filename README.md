@@ -19,7 +19,15 @@ Ensure the following are installed:
 ## Installation
 
 ```bash
+# Clone this repo with:
+git clone git@github.com:nextredo/dotfiles.git --recurse-submodules
+
+# Update submodules (to latest mains)
+git submodule update --remote
+
+# Use this repo's dotfiles with
 # Ensure $STOW_DIR is unset
+# Ensure you're in the repository root
 stow .
 ```
 
@@ -33,7 +41,7 @@ stow .
 fc-cache -f -v
 
 # Test string for the terminal
-echo "♥❤️👍😍🙊🥱🥺✨✅🎊🏄⚠️"
+echo "Syms:♥ \nEmojis: ❤️👍😍🙊🥱🥺✨✅🎊🏄⚠️"
 ```
 
 ### Terminal
