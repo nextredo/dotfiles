@@ -22,13 +22,20 @@ Ensure the following are installed:
 # Clone this repo with:
 git clone git@github.com:nextredo/dotfiles.git --recurse-submodules
 
-# Update submodules (to latest mains)
-git submodule update --remote
-
 # Use this repo's dotfiles with
 # Ensure $STOW_DIR is unset
 # Ensure you're in the repository root
 stow .
+```
+
+## Updates
+
+```bash
+# Pull this repo and submodules
+git pull --all --recurse-submodules
+
+# Update submodules (to checkout latest commit in main / master)
+git submodule update --remote
 ```
 
 ## Extra config
