@@ -1,4 +1,6 @@
 set debuginfod enabled off
+
+# TUI setup
 tui enable
 set tui compact-source on
 
@@ -24,17 +26,10 @@ set history remove-duplicates unlimited
 # cd where/gdb/is/running
 # tail -f gdb.txt
 
-# Instead of the following, run `tty > /tmp/gdbterm/` in a terminal window
-# Then run gdb with `--tty="($cat /tmp/gdbterm/)"`
-
-# shell kgx --command "tty > /tmp/gdbs_2nd_term_file_desc; exec $SHELL;"
-# shell alacritty --command "tty > /tmp/gdbs_2nd_term_file_desc; exec $SHELL;"
-# shell sleep 1.5
-# shell echo "tty $(cat /tmp/gdbs_2nd_term_file_desc)" > /tmp/gdbs_2nd_term_file_desc
-# shell echo "set inferior-tty $(cat /tmp/gdbs_2nd_term_file_desc)" > /tmp/gdbs_2nd_term_file_desc
-# shell sleep 1.5
-# source /tmp/gdbs_2nd_term_file_desc
-# shell sleep 0.5
+# To use another terminal for program stdout (instead of the terminal GDB is in),
+# use the following:
+# Run `tty > /tmp/gdbterm/` in a terminal window
+# Then run gdb with `--tty="$(cat /tmp/gdbterm/)"`
 
 # Windows only :
 # set new-console on

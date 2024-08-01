@@ -22,20 +22,28 @@ Ensure the following are installed:
 # Clone this repo with:
 git clone git@github.com:nextredo/dotfiles.git --recurse-submodules
 
-# Use this repo's dotfiles with
-# Ensure $STOW_DIR is unset
-# Ensure you're in the repository root
+# Use this repo's dotfiles with:
+    # Ensure $STOW_DIR is unset
+    # Ensure you're in the repository root
+# NOTE: If you're unsure about what changes stow will make,
+    # then run it with --simulate --verbose
 stow .
+
+# *Then follow the exta config steps below*
 ```
 
 ## Updates
 
 ```bash
-# Pull this repo and submodules
+# 0. `cd` into the root of this repo
+# 1. Pull this repo and submodules
 git pull --all --recurse-submodules
 
-# Update submodules (to checkout latest commit in main / master)
+# 2. Update submodules (to checkout latest commit in main / master)
 git submodule update --remote
+
+# 3. Update symlinks
+stow .
 ```
 
 ## Extra config
