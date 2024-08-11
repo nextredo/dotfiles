@@ -4,9 +4,8 @@ set debuginfod enabled off
 tui enable
 set tui compact-source on
 
-# tui new-layout example {-horizontal src 2 asm 1} 2 status 0 cmd 1
-# tui new-layout example {-horizontal src 2 asm 1} 2 status 0 cmd 2
-tui new-layout example {-horizontal src 2} 2 status 0 cmd 2
+tui new-layout the-usual {-horizontal src 2} 2 status 0 cmd 2
+tui new-layout with-asm {-horizontal src 2 asm 1} 2 status 0 cmd 2
 tui layout example
 tui window height cmd +5
 focus cmd
