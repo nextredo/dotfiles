@@ -18,6 +18,10 @@
     ; lolz = log --graph --decorate --pretty=oneline --abbrev-commit -g stash --all
     lols = log --graph --decorate --pretty=oneline --abbrev-commit --all --reflog
 
+    ; https://stackoverflow.com/questions/42555410/is-it-possible-to-search-through-git-stash-items
+    stashgrep = "!f() { for i in `git stash list --format=\"%gd\"` ; \
+              do git stash show -p $i | grep -H --label=\"$i\" \"$@\" ; done ; }; f"
+
     s = status
     this = rev-parse HEAD
 [color]
