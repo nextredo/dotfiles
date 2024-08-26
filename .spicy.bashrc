@@ -1,6 +1,5 @@
 # Hi and welcome to my bashrc
-# To use this file put the following in your actual bashrc (assuming this file is at ~/dotfiles/)
-# source ~/dotfiles/.spicy.bashrc
+# Install instructions for this are in the readme
 
 # Git "quicksave" for bad habits that die hard :)
 function gitquick
@@ -20,5 +19,8 @@ function gitquick
     git stash apply
     trap - ERR;
 }
+
+# Because who uses emacs?
+alias info="info --vi-keys"
 
 # vim: set filetype=bash :

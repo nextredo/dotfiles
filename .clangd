@@ -1,0 +1,5 @@
+CompileFlags:
+  Add: [
+    # Remove the limit on the number of errors clangd will encounter before stopping
+    -ferror-limit=0,
+  ]

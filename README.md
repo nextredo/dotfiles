@@ -27,6 +27,7 @@ git clone git@github.com:nextredo/dotfiles.git --recurse-submodules
     # Ensure you're in the repository root
 # NOTE: If you're unsure about what changes stow will make,
     # then run it with --simulate --verbose
+    # if you'd like to stow anyway, use --adopt
 stow .
 
 # *Then follow the exta config steps below*
@@ -38,6 +39,9 @@ stow .
 # 0. `cd` into the root of this repo
 # 1. Pull this repo and submodules
 git pull --all --recurse-submodules
+
+# 2. Update the submodules (first time)
+git submodule update --init --recursive
 
 # 2. Update submodules (to checkout latest commit in main / master)
 git submodule update --remote
@@ -101,6 +105,14 @@ ln ~/.config/keyd/default.conf /etc/keyd/default.conf -s
 sudo systemctl status keyd
 sudo systemctl start keyd
 sudo keyd reload
+```
+
+### Bash
+
+- To use this file put the following in your actual bashrc (assuming this file is in ~/dotfiles/)
+
+```bash
+source ~/dotfiles/.spicy.bashrc
 ```
 
 ## References
