@@ -1,22 +1,28 @@
 [http]
     sslVerify = false
+
 [commit]
     template = ~/.config/git/.gitmessage
+
 [user]
     ; email =
     ; name =
+
 [core]
     editor = vim
+
 [credential]
     helper = cache --timeout=1200
+
 [alias]
-    lol = log --graph --decorate --pretty=oneline --abbrev-commit
-    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    lol = log --graph --decorate --oneline
+    lola = log --graph --decorate --oneline --all
+    lolstat = log --graph --decorate --oneline --all
 
     ; https://stackoverflow.com/questions/14988929/show-all-stashes-in-git-log
     ; lols = log --oneline --graph --decorate --all $(git reflog show --format="%h" stash)
     ; lolz = log --graph --decorate --pretty=oneline --abbrev-commit -g stash --all
-    lols = log --graph --decorate --pretty=oneline --abbrev-commit --all --reflog
+    lolstash = log --graph --decorate --oneline --all --reflog
 
     ; https://stackoverflow.com/questions/42555410/is-it-possible-to-search-through-git-stash-items
     stashgrep = "!f() { for i in `git stash list --format=\"%gd\"` ; \
@@ -24,6 +30,7 @@
 
     s = status
     this = rev-parse HEAD
+
 [color]
     branch = auto
     diff = auto

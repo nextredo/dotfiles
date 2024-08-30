@@ -6,7 +6,7 @@ set tui compact-source on
 
 tui new-layout the-usual {-horizontal src 2} 2 status 0 cmd 2
 tui new-layout with-asm {-horizontal src 2 asm 1} 2 status 0 cmd 2
-tui layout example
+tui layout the-usual
 tui window height cmd +5
 focus cmd
 
