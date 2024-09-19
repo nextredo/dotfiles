@@ -65,13 +65,6 @@ echo "Syms:♥ \nEmojis: ❤️👍😍🙊🥱🥺✨✅🎊🏄⚠️"
 
 ### Terminal
 
-[SO post link][reverse-i-search-fix]
-
-```bash
-# To fix ctrl+s not working to scroll in ctrl+r reverse-i-search:
-stty -ixon
-```
-
 ### C / C++ (`clangd`)
 
 - Configured per-repo, not globally
@@ -109,7 +102,8 @@ sudo keyd reload
 
 ### Bash
 
-- To use this file put the following in your actual bashrc (assuming this file is in ~/dotfiles/)
+- To use this file put the following in your actual bashrc / fishrc / zshrc
+    - (assuming this file is in ~/dotfiles/)
 
 ```bash
 source ~/dotfiles/.spicy.bashrc
@@ -122,4 +116,3 @@ source ~/dotfiles/.spicy.bashrc
 <!-- Links -->
 [vid1]: https://www.youtube.com/watch?v=y6XCebnB9gs&ab_channel=DreamsofAutonomy
 [term-font]: https://www.nerdfonts.com/font-downloads
-[reverse-i-search-fix]: https://stackoverflow.com/questions/12373586/how-to-reverse-i-search-back-and-forth
