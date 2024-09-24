@@ -2,31 +2,31 @@
 ## Import files (Colors, Fonts, Etc)
 import = [
   # Middle-of-the-road themes
-  "~/installations/experimentation/alacritty-theme/themes/gnome_terminal.toml"
-  # "~/installations/experimentation/alacritty-theme/themes/konsole_linux.toml"
-  # "~/installations/experimentation/alacritty-theme/themes/tomorrow_night.toml"
-  # "~/installations/experimentation/alacritty-theme/themes/gruvbox_dark.toml"
-  # "~/installations/experimentation/alacritty-theme/themes/breeze.toml"
+  "~/.config/alacritty/alacritty-theme/themes/gnome_terminal.toml"
+  # "~/.config/alacritty/alacritty-theme/themes/konsole_linux.toml"
+  # "~/.config/alacritty/alacritty-theme/themes/tomorrow_night.toml"
+  # "~/.config/alacritty/alacritty-theme/themes/gruvbox_dark.toml"
+  # "~/.config/alacritty/alacritty-theme/themes/breeze.toml"
 
   # Bright themes
-  # "~/installations/experimentation/alacritty-theme/themes/chicago95.toml"
-  # "~/installations/experimentation/alacritty-theme/themes/tomorrow_night_bright.toml"
-  # "~/installations/experimentation/alacritty-theme/themes/xterm.toml"
-  # "~/installations/experimentation/alacritty-theme/themes/terminal_app.toml"
-  # "~/installations/experimentation/alacritty-theme/themes/hyper.toml"
-  # "~/installations/experimentation/alacritty-theme/themes/monokai_charcoal.toml"
+  # "~/.config/alacritty/alacritty-theme/themes/chicago95.toml"
+  # "~/.config/alacritty/alacritty-theme/themes/tomorrow_night_bright.toml"
+  # "~/.config/alacritty/alacritty-theme/themes/xterm.toml"
+  # "~/.config/alacritty/alacritty-theme/themes/terminal_app.toml"
+  # "~/.config/alacritty/alacritty-theme/themes/hyper.toml"
+  # "~/.config/alacritty/alacritty-theme/themes/monokai_charcoal.toml"
 
   # Themes with odd background colours
-  # "~/installations/experimentation/alacritty-theme/themes/github_dark.toml"
-  # "~/installations/experimentation/alacritty-theme/themes/iris.toml"
-  # "~/installations/experimentation/alacritty-theme/themes/marine_dark.toml"
-  # "~/installations/experimentation/alacritty-theme/themes/Cobalt2.toml"
+  # "~/.config/alacritty/alacritty-theme/themes/github_dark.toml"
+  # "~/.config/alacritty/alacritty-theme/themes/iris.toml"
+  # "~/.config/alacritty/alacritty-theme/themes/marine_dark.toml"
+  # "~/.config/alacritty/alacritty-theme/themes/Cobalt2.toml"
 
   # Themes with too little constast between colours
-  # "~/installations/experimentation/alacritty-theme/themes/google.toml"
+  # "~/.config/alacritty/alacritty-theme/themes/google.toml"
 
   # Cool themes
-  # "~/installations/experimentation/alacritty-theme/themes/inferno.toml"
+  # "~/.config/alacritty/alacritty-theme/themes/inferno.toml"
 ]
 
 live_config_reload = true

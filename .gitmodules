@@ -8,3 +8,6 @@
 	branch = main
 [submodule ".config/vim"]
 	branch = master
+[submodule ".config/alacritty/alacritty-theme"]
+	path = .config/alacritty/alacritty-theme
+	url = git@github.com:alacritty/alacritty-theme.git
