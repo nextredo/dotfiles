@@ -2,7 +2,7 @@
 # <https://www.gnu.org/software/stow/manual/stow.html>
 # ------------------------------------------------------------------------------
 # Custom ignores ---------------------------------------------------------------
-scripts
+\.uuid
 
 # ------------------------------------------------------------------------------
 # Stow defaults ----------------------------------------------------------------
@@ -21,8 +21,7 @@ _darcs
 
 \.git
 
-# TODO figure out a way to make gitconfig exempt
-
+# TODO figure out a way to make gitconfig exempt?
 \.gitignore
 \.gitmodules
 

@@ -1,6 +1,14 @@
 # Hi and welcome to my bashrc
 # Install instructions for this are in the readme
 
+# sha1 hash an entire directory
+# https://stackoverflow.com/questions/545387/linux-compute-a-single-hash-for-a-given-folder-contents
+function hashdir
+{
+    # Doesn't take empty dirs / permission into account
+    find "$1" -type f -print0 | sort -z | xargs -0 sha1sum | sha1sum;
+}
+
 # Git "quicksave" for bad habits that die hard :)
 function gitquick
 {
