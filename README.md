@@ -37,16 +37,20 @@ stow .
 
 ```bash
 # 0. `cd` into the root of this repo
-# 1. Pull this repo and submodules
+
+# 1. Check if there are any updates
+git fetch --all --recurse-submodules
+
+# 2. Pull this repo and submodules
 git pull --all --recurse-submodules
 
-# 2. Update the submodules (first time)
+# 3. Update the submodules (first time)
 git submodule update --init --recursive
 
-# 2. Update submodules (to checkout latest commit in main / master)
+# 3. Update submodules (to checkout latest commit in main / master)
 git submodule update --remote
 
-# 3. Update symlinks
+# 4. Update symlinks (see installation section)
 stow .
 ```
 
