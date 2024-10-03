@@ -8,5 +8,5 @@
 	branch = master
 [submodule ".config/alacritty/alacritty-theme"]
 	path = .config/alacritty/alacritty-theme
-	url = git@github.com:alacritty/alacritty-theme.git
+	url = https://github.com/alacritty/alacritty-theme
 	branch = master

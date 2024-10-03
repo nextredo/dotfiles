@@ -27,8 +27,8 @@ set history remove-duplicates unlimited
 
 # To use another terminal for program stdout (instead of the terminal GDB is in),
 # use the following:
-# Run `tty > /tmp/gdbterm/` in a terminal window
-# Then run gdb with `--tty="$(cat /tmp/gdbterm/)"`
+# Run `tty > /tmp/gdbterm` in a terminal window
+# Then run gdb with `--tty="$(cat /tmp/gdbterm)"`
 
 # Windows only :
 # set new-console on
