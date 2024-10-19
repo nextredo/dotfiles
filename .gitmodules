@@ -1,12 +1,12 @@
-[submodule ".config/nvim"]
+[submodule "nvim"]
 	path = .config/vim
 	url = https://github.com/nextredo/vim-conf
 	branch = main
-[submodule ".config/vim"]
+[submodule "vim"]
 	path = .config/nvim
 	url = https://github.com/nextredo/nvim-conf
 	branch = master
-[submodule ".config/alacritty/alacritty-theme"]
+[submodule "alacritty-theme"]
 	path = .config/alacritty/alacritty-theme
 	url = https://github.com/alacritty/alacritty-theme
 	branch = master

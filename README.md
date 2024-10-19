@@ -56,6 +56,12 @@ stow .
 
 ## Extra config
 
+- Helpful commands
+
+```bash
+git submodule sync
+```
+
 ### Font config
 
 ```bash
