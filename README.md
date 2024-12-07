@@ -64,6 +64,12 @@ git submodule sync
 
 ### Font config
 
+- Emoji fonts may not work in Alacritty on Ubuntu 22.04
+- See [this link](https://github.com/alacritty/alacritty/issues/8050) for more info
+- To solve
+  - Either use a newer version of `libfreetype` (via having a newer Ubuntu version)
+  - Or, use alacritty from commit `a77f77c `
+
 ```bash
 # Ensure your terminal is using the custom fontconfig
 # Flush the font cache
