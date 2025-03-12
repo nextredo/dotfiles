@@ -30,7 +30,9 @@ git clone git@github.com:nextredo/dotfiles.git --recurse-submodules
     # if you'd like to stow anyway, use --adopt
 stow .
 
-# *Then follow the exta config steps below*
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# ! *Then follow the extra config steps below* !
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ```
 
 ## Updates

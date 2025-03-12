@@ -35,4 +35,8 @@ alias info="info --vi-keys"
 # https://stackoverflow.com/questions/12373586/how-to-reverse-i-search-back-and-forth
 stty -ixon
 
+# Biiiiig history
+HISTSIZE=500000
+HISTFILESIZE=500000
+
 # vim: set filetype=bash :
