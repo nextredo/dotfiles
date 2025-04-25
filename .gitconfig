@@ -42,5 +42,6 @@
 [diff]
     ; tool = vimdiff
     tool = nvimdiff
+    submodule = log
 [difftool "nvimdiff"]
     cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
