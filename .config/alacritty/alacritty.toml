@@ -1,10 +1,13 @@
-# [general]
+[general]
 import = [
   # Solid choices
-  "~/.config/alacritty/alacritty-theme/themes/gnome_terminal.toml"
+  # "~/.config/alacritty/alacritty-theme/themes/gnome_terminal.toml"
   # "~/.config/alacritty/alacritty-theme/themes/konsole_linux.toml"
   # "~/.config/alacritty/alacritty-theme/themes/gruvbox_dark.toml"
   # "~/.config/alacritty/alacritty-theme/themes/breeze.toml"
+  "~/.config/alacritty/alacritty-theme/themes/alabaster_dark.toml"
+  # "~/.config/alacritty/alacritty-theme/themes/linux.toml"
+  # "~/.config/alacritty/alacritty-theme/themes/vscode.toml"
 
   # Bright themes
   # "~/.config/alacritty/alacritty-theme/themes/chicago95.toml"
@@ -13,6 +16,7 @@ import = [
   # "~/.config/alacritty/alacritty-theme/themes/terminal_app.toml"
   # "~/.config/alacritty/alacritty-theme/themes/hyper.toml"
   # "~/.config/alacritty/alacritty-theme/themes/monokai_charcoal.toml"
+  # "~/.config/alacritty/alacritty-theme/themes/kitty.toml"
 
   # Themes with odd background colours
   # "~/.config/alacritty/alacritty-theme/themes/github_dark.toml"
@@ -21,6 +25,7 @@ import = [
   # "~/.config/alacritty/alacritty-theme/themes/Cobalt2.toml"
   # "~/.config/alacritty/alacritty-theme/themes/ubuntu.toml"
   # "~/.config/alacritty/alacritty-theme/themes/synthwave_84.toml"
+  # "~/.config/alacritty/alacritty-theme/themes/rigel.toml"
 
   # Themes with too little constast between colours
   # "~/.config/alacritty/alacritty-theme/themes/google.toml"
@@ -34,6 +39,7 @@ import = [
 
   # Themes that look a little washed out
   # "~/.config/alacritty/alacritty-theme/themes/terafox.toml"
+  # "~/.config/alacritty/alacritty-theme/themes/miasma.toml"
 
   # Themes where text is straight up unreadable
   # "~/.config/alacritty/alacritty-theme/themes/tomorrow_night.toml"
