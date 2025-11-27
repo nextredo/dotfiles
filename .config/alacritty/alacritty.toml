@@ -1,3 +1,5 @@
+[general]
+live_config_reload = true
 import = [
   # Solid choices
   ## "~/.config/alacritty/alacritty-theme/themes/gnome_terminal.toml"
@@ -50,8 +52,6 @@ import = [
   # Uncategorised
 ]
 
-live_config_reload = true
-
 [env]
 # Fixes htop over ssh
 TERM = "xterm-256color"
@@ -60,6 +60,7 @@ TERM = "xterm-256color"
 [window]
 dimensions = { columns = 130, lines = 32 }
 padding = { x = 10, y = 10 }
+# padding = { x = 10, y = 10 }
 # dynamic_padding = true
 decorations = "full"
 opacity = 0.92
@@ -95,6 +96,7 @@ draw_bold_text_with_bright_colors = true
 
 [bell]
 animation = "EaseOutSine"
+duration = 750
 
 ## Cursor
 [cursor]
@@ -110,8 +112,8 @@ history = 100000
 [hints]
 # ???
 
-[debug]
+# [debug]
 # renderer = "glsl3"
 # highlight_damage = true
 # log_level = "Info"
-prefer_egl = true
+# prefer_egl = true
