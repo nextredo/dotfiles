@@ -2,7 +2,7 @@
 live_config_reload = true
 import = [
   # Solid choices
-  ## "~/.config/alacritty/alacritty-theme/themes/gnome_terminal.toml"
+  # "~/.config/alacritty/alacritty-theme/themes/gnome_terminal.toml"
   # "~/.config/alacritty/alacritty-theme/themes/konsole_linux.toml"
   "~/.config/alacritty/alacritty-theme/themes/gruvbox_dark.toml"
   # "~/.config/alacritty/alacritty-theme/themes/breeze.toml"
@@ -70,7 +70,7 @@ resize_increments = true
 blur = true
 
 [font]
-size = 12
+size = 15
 
 # bold, italic & bold_italic font variants
 # automatically use the normal font family as a fallback
@@ -96,7 +96,8 @@ draw_bold_text_with_bright_colors = true
 
 [bell]
 animation = "EaseOutSine"
-duration = 750
+duration = 500
+color = "#ffffff"
 
 ## Cursor
 [cursor]
@@ -109,7 +110,11 @@ blinking = "On"
 [scrolling]
 history = 100000
 
-[hints]
+[[keyboard.bindings]]
+key = "F11"
+action = "ToggleFullscreen"
+
+# [hints]
 # ???
 
 # [debug]
