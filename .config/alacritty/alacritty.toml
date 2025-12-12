@@ -70,7 +70,7 @@ resize_increments = true
 blur = true
 
 [font]
-size = 15
+size = 13.5
 
 # bold, italic & bold_italic font variants
 # automatically use the normal font family as a fallback

@@ -96,7 +96,14 @@ echo "Syms:♥ \nEmojis: ❤️👍😍🙊🥱🥺✨✅🎊🏄⚠️"
 - Only theme I've found plays well with `conda`
 
 ```zsh
-ZSH_THEME="ys"
+# GOOD
+# ZSH_THEME="ys"
+
+# ZSH_THEME="gallois"
+# - No hostename, username
+# - Just path, git branch
+# - Has time last cmd took to run
+# - Has return code of last item
 
 # Others
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
@@ -105,6 +112,15 @@ ZSH_THEME="ys"
 # ZSH_THEME="tonotdo"
 # ZSH_THEME="cypher"
 # ZSH_THEME="fino-time"
+
+# Other others
+# ZSH_THEME="skaro"
+# ZSH_THEME="trapd00r"
+
+# Not great
+# ZSH_THEME="kardan"
+# ZSH_THEME="geoffgarside"
+# ZSH_THEME="simple"
 ```
 
 ### Keyd

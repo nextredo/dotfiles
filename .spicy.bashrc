@@ -28,6 +28,7 @@ function gitquick
     trap - ERR;
 }
 
+# Aliases
 # Because who uses emacs?
 alias info="info --vi-keys"
 
