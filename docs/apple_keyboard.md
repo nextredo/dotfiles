@@ -36,9 +36,13 @@ options hid_apple swap_fn_leftctrl=1 swap_opt_cmd=1
 - [ ] `ejectcd_as_delete`
 - [ ] `rightalt_as_rightctrl`
 
-### More
-- [ ] How to do print screen?
-- [ ] How to get around this not working with magic sysrqs?
+## PrintScreen, SysRq
+- Keyboard doesn't have the button for it ;(
+- No native way to do it afaik
+- Just need to do remappings
+  - keyd
+  - or Gnome
+  - Probably better as keyd, since I assume you *might* be able to use it for SysRq then?
 
 [patched-driver]: https://github.com/free5lot/hid-apple-patched
 [aw-apple-kb]: https://wiki.archlinux.org/title/Apple_Keyboard
