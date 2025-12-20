@@ -31,6 +31,7 @@ function gitquick
 # Aliases
 # Because who uses emacs?
 alias info="info --vi-keys"
+alias make="make -j$(nproc)"
 
 # To fix ctrl+s not working to scroll forward in ctrl+r reverse-i-search:
 # https://stackoverflow.com/questions/12373586/how-to-reverse-i-search-back-and-forth

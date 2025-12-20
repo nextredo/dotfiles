@@ -5,6 +5,9 @@
 ## Config
 ### Temporary
 ```bash
+# Check which parameters are available with;
+# ls -lah /sys/module/hid_apple/parameters
+
 sudo sh -c 'echo "1" > /sys/module/hid_apple/parameters/swap_fn_leftctrl'
 sudo sh -c 'echo "1" > /sys/module/hid_apple/parameters/swap_opt_cmd'
 ```
@@ -14,7 +17,10 @@ sudo sh -c 'echo "1" > /sys/module/hid_apple/parameters/swap_opt_cmd'
 # in /etc/modprobe.d/hid_apple.conf
 options hid_apple swap_fn_leftctrl=1 swap_opt_cmd=1
 
-# then regenerate initramfs
+# then regenerate initramfs?
+# nah just need to modprobe the driver out and in again
+sudo modprobe -r hid_apple
+sudo modprobe hid_apple
 ```
 
 ## Shortcuts
