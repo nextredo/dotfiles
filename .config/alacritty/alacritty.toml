@@ -58,7 +58,7 @@ TERM = "xterm-256color"
 
 ## Terminal window settings
 [window]
-dimensions = { columns = 130, lines = 32 }
+dimensions = { columns = 122, lines = 28 }
 padding = { x = 10, y = 10 }
 # padding = { x = 10, y = 10 }
 # dynamic_padding = true
@@ -70,7 +70,7 @@ resize_increments = true
 blur = true
 
 [font]
-size = 13.5
+size = 16
 
 # bold, italic & bold_italic font variants
 # automatically use the normal font family as a fallback
