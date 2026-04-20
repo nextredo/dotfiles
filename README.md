@@ -78,7 +78,7 @@ git submodule sync
 fc-cache -f -v
 
 # Test string for the terminal
-echo "Syms:♥ \nEmojis: ❤️👍😍🙊🥱🥺✨✅🎊🏄⚠️"
+echo -e "Syms:♥ \nEmojis: ❤️👍😍🙊🥱🥺✨✅🎊🏄⚠️"
 ```
 
 ### Terminal
@@ -126,12 +126,47 @@ echo "Syms:♥ \nEmojis: ❤️👍😍🙊🥱🥺✨✅🎊🏄⚠️"
 ### Keyd
 
 ```bash
-# Symlink setup (likely requires superuser privs)
-ln ~/.config/keyd/default.conf /etc/keyd/default.conf -s
+# Symlink setup (requires superuser privileges)
+sudo ln -s ~/.config/keyd/default.conf /etc/keyd/default.conf
 
 sudo systemctl status keyd
-sudo systemctl start keyd
+sudo systemctl enable keyd --now
 sudo keyd reload
+
+# Chown the file as root so regular userspace programs can't mess with your keyboard
+sudo chown root:root ~/.config/keyd/default.conf
+```
+
+### Powertop
+- The Framework 12th Gen Intel has terrible battery life (i5-1240p)
+- It's advisable to do whatever you can to save on power consumption
+- Introducing: `sudo powertop --auto-tune`
+- It's developed by intel so I trust em
+
+```bash
+# Setup the systemd service unit file
+sudo cat << EOF > /etc/systemd/system/powertop.service
+# Thanks to the Arch Wiki <3
+# https://wiki.archlinux.org/title/Powertop
+###########################################
+
+[Unit]
+Description=PowerTOP auto tune
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/sbin/powertop --auto-tune
+
+[Install]
+WantedBy=multi-user.target sleep.target
+EOF
+
+# Restart the daemon so it uses the new unit
+sudo systemctl daemon-reload
+
+# Enable and start the service
+sudo systemctl enable powertop.service --now
 ```
 
 ### Bash
