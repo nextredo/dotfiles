@@ -1,8 +1,14 @@
 # --- Appearance ---
-# theme = dark
+window-theme = system
+# window-theme = ghostty
 
+# Fonts
 font-size = 12
 font-family = "monospace"
+
+# Background
+background-opacity = 0.92
+background-blur = true
 
 # --- Cursor ---
 # Blinking solid block as requested
@@ -14,18 +20,18 @@ cursor-click-to-move = true
 background-blur-radius = 20
 window-width = 122
 window-height = 28
-window-padding-x = 6
-window-padding-y = 6
+window-padding-x = 4
+window-padding-y = 4
 window-decoration = true
 
 # --- Behaviors ---
-# copy-on-select = true
 confirm-close-surface = true
+notify-on-command-finish = unfocused
 
 # --- Keybinds ---
 keybind = ctrl+shift+r=reload_config
+keybind = f11=toggle_fullscreen
 
 # --- Scrollback ---
-
-# Additional visual settings
-# term = xterm-256color
+# In bytes
+scrollback-limit = 10000000
