@@ -35,6 +35,7 @@ background-blur = true
 cursor-style = block
 cursor-style-blink = true
 cursor-click-to-move = true
+shell-integration-features = no-cursor
 
 # --- Window Layout ---
 background-blur-radius = 20
