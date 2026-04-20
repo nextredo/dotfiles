@@ -1,33 +1,31 @@
-# Ghostty configuration
+# --- Appearance ---
+# theme = dark
 
-# Window settings
-window-decoration = full
-window-opacity = 0.92
-window-blur-radius = 20
+font-size = 12
+font-family = "monospace"
+
+# --- Cursor ---
+# Blinking solid block as requested
+cursor-style = block
+cursor-style-blink = true
+cursor-click-to-move = true
+
+# --- Window Layout ---
 background-blur-radius = 20
-
-# Window dimensions and padding
 window-width = 122
 window-height = 28
-padding = 10
+window-padding-x = 6
+window-padding-y = 6
+window-decoration = true
 
-# Font settings
-font-family = monospace_with_emoji
-font-size = 16
+# --- Behaviors ---
+# copy-on-select = true
+confirm-close-surface = true
 
-# Cursor settings
-cursor-style = block
-cursor-blink = true
-cursor-blink-rate = 500
+# --- Keybinds ---
+keybind = ctrl+shift+r=reload_config
 
-# Scrollback
-scrollback-lines = 100000
+# --- Scrollback ---
 
 # Additional visual settings
-term = xterm-256color
-dynamic-title = true
-auto-resize = true
-
-# Colors
-foreground-opacity = 1.0
-background-opacity = 0.92
+# term = xterm-256color
