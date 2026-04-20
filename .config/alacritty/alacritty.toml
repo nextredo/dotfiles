@@ -76,7 +76,8 @@ size = 16
 # automatically use the normal font family as a fallback
 
 # good
-normal = { family = "emojified_nerd_font"}
+normal = { family = "monospace_with_emoji"}
+# normal = { family = "emojified_nerd_font"}
 # normal = { family = "Code New Roman Nerd Font"}
 # normal = { family = "Inconsolata Nerd Font"}
 
