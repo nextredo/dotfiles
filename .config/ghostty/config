@@ -1,6 +1,26 @@
 # --- Appearance ---
 window-theme = system
-# window-theme = ghostty
+# Daily driver type themes
+# theme = Doom Peacock
+# theme = Adwaita Dark
+theme = Gruvbox Dark
+# theme = Material Dark
+# theme = Chalk
+
+# Bit weird but otherwise ok
+# theme = Firefox Dev
+# theme = Dimmed Monokai
+
+# FuNkY colour themes
+# theme = IC Orange PPL
+
+# Retro terminal themes
+# theme = HaX0R Gr33N
+# theme = iTerm2 Smoooooth
+# theme = ENCOM
+# theme = CGA
+# theme = Konsolas
+# theme = IRIX Console
 
 # Fonts
 font-size = 12
