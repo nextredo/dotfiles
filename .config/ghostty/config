@@ -1,0 +1,33 @@
+# Ghostty configuration
+
+# Window settings
+window-decoration = full
+window-opacity = 0.92
+window-blur-radius = 20
+background-blur-radius = 20
+
+# Window dimensions and padding
+window-width = 122
+window-height = 28
+padding = 10
+
+# Font settings
+font-family = monospace_with_emoji
+font-size = 16
+
+# Cursor settings
+cursor-style = block
+cursor-blink = true
+cursor-blink-rate = 500
+
+# Scrollback
+scrollback-lines = 100000
+
+# Additional visual settings
+term = xterm-256color
+dynamic-title = true
+auto-resize = true
+
+# Colors
+foreground-opacity = 1.0
+background-opacity = 0.92
