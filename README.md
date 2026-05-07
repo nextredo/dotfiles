@@ -141,8 +141,13 @@ sudo chown root:root ~/.config/keyd/default.conf
 - The Framework 12th Gen Intel has terrible battery life (i5-1240p)
 - It's advisable to do whatever you can to save on power consumption
 - Introducing: `sudo powertop --auto-tune`
-- It's developed by intel so I trust em
+- It's developed by intel, so I trust em somewhat
 
+#### Important notes
+- Make sure not to turn off *"Autosuspend for USB ..."* settings
+- This causes mice and alike to become sluggish to wake up from sleep
+
+#### Systemd integration
 ```bash
 # Setup the systemd service unit file
 sudo cat << EOF > /etc/systemd/system/powertop.service
