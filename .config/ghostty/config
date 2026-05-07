@@ -39,8 +39,8 @@ shell-integration-features = no-cursor
 
 # --- Window Layout ---
 background-blur-radius = 20
-window-width = 122
-window-height = 28
+window-width = 118
+window-height = 34
 window-padding-x = 4
 window-padding-y = 4
 window-decoration = true
@@ -56,3 +56,6 @@ keybind = f11=toggle_fullscreen
 # --- Scrollback ---
 # In bytes
 scrollback-limit = 10000000
+
+# --- Working dir ---
+working-directory = home
