@@ -4,6 +4,9 @@
 [commit]
     template = ~/.config/git/.gitmessage
 
+; [init]
+    ; defaultBranch = master
+
 [user]
     ; email =
     ; name =
@@ -18,6 +21,7 @@
     lol = log --graph --decorate --oneline
     lola = log --graph --decorate --oneline --all
     lolstat = log --graph --decorate --oneline --all
+    glog = log --stat
 
     ; https://stackoverflow.com/questions/14988929/show-all-stashes-in-git-log
     ; lols = log --oneline --graph --decorate --all $(git reflog show --format="%h" stash)
@@ -37,11 +41,13 @@
     interactive = auto
     status = auto
 
-[difftool]
-    prompt = true
 [diff]
     ; tool = vimdiff
     tool = nvimdiff
     submodule = log
+
+[difftool]
+    prompt = true
+
 [difftool "nvimdiff"]
     cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
