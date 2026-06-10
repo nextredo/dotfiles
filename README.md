@@ -1,7 +1,5 @@
 # Dotfiles
-
 ## Requirements
-
 Ensure the following are installed:
 
 - GNU Stow
@@ -13,11 +11,9 @@ Ensure the following are installed:
 - gdb
 
 ### Font
-
 - [Terminess Nerd Font][term-font]
 
 ## Installation
-
 ```bash
 # Clone this repo with:
 git clone git@github.com:nextredo/dotfiles.git --recurse-submodules
@@ -36,10 +32,8 @@ stow .
 ```
 
 ## Updates
-
 ```bash
 # 0. `cd` into the root of this repo
-
 # 1. Check if there are any updates
 git fetch --all --recurse-submodules
 
@@ -49,15 +43,14 @@ git pull --all --recurse-submodules
 # 3. Update the submodules (first time)
 git submodule update --init --recursive
 
-# 3. Update submodules (to checkout latest commit in main / master)
+# 4. Update submodules (to checkout latest commit in main / master)
 git submodule update --remote
 
-# 4. Update symlinks (see installation section)
+# 5. Update symlinks (see installation section)
 stow .
 ```
 
 ## Extra config
-
 - Helpful commands
 
 ```bash
@@ -65,7 +58,6 @@ git submodule sync
 ```
 
 ### Font config
-
 - Emoji fonts may not work in Alacritty on Ubuntu 22.04
 - See [this link](https://github.com/alacritty/alacritty/issues/8050) for more info
 - To solve
@@ -82,17 +74,13 @@ echo -e "Syms:♥ \nEmojis: ❤️👍😍🙊🥱🥺✨✅🎊🏄⚠️"
 ```
 
 ### Terminal
-
 ### C / C++ (`clangd`)
-
 - Configured per-repo, not globally
 
 ### VSCode
-
 - Uses vscode settings sync
 
 ### Oh My zsh
-
 - Only theme I've found plays well with `conda`
 
 ```zsh
@@ -124,7 +112,6 @@ echo -e "Syms:♥ \nEmojis: ❤️👍😍🙊🥱🥺✨✅🎊🏄⚠️"
 ```
 
 ### Keyd
-
 ```bash
 # Symlink setup (requires superuser privileges)
 sudo ln -s ~/.config/keyd/default.conf /etc/keyd/default.conf
@@ -175,7 +162,6 @@ sudo systemctl enable powertop.service --now
 ```
 
 ### Bash
-
 - To use this file put the following in your actual bashrc / fishrc / zshrc
     - (assuming this file is in ~/dotfiles/)
 
@@ -184,8 +170,7 @@ source ~/dotfiles/.spicy.bashrc
 ```
 
 ## References
-
->[Dreams of Autonomy - Stow][vid1]
+> [Dreams of Autonomy - Stow][vid1]
 
 <!-- Links -->
 [vid1]: https://www.youtube.com/watch?v=y6XCebnB9gs&ab_channel=DreamsofAutonomy
