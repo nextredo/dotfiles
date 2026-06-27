@@ -60,3 +60,6 @@ scrollback-limit = 10000000
 
 # --- Working dir ---
 working-directory = home
+
+# --- Term vars ---
+env = TERM=xterm-256color
