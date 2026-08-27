@@ -1,14 +1,12 @@
 # Dotfiles
 ## Requirements
 Ensure the following are installed:
-
 - GNU Stow
 - Git
-- zsh
-  - Oh My Zsh
-- alacritty
-  - alacritty-theme
-- gdb
+
+## Nice-to-haves
+- [Starship shell prompt][starship]
+- [ghostty terminal emulator][ghostty]
 
 ### Font
 - [Terminess Nerd Font][term-font]
@@ -86,29 +84,6 @@ echo -e "Syms:♥ \nEmojis: ❤️👍😍🙊🥱🥺✨✅🎊🏄⚠️"
 ```zsh
 # GOOD
 # ZSH_THEME="ys"
-
-# ZSH_THEME="gallois"
-# - No hostename, username
-# - Just path, git branch
-# - Has time last cmd took to run
-# - Has return code of last item
-
-# Others
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# ZSH_THEME="robbyrussell"
-# ZSH_THEME="random"
-# ZSH_THEME="tonotdo"
-# ZSH_THEME="cypher"
-# ZSH_THEME="fino-time"
-
-# Other others
-# ZSH_THEME="skaro"
-# ZSH_THEME="trapd00r"
-
-# Not great
-# ZSH_THEME="kardan"
-# ZSH_THEME="geoffgarside"
-# ZSH_THEME="simple"
 ```
 
 ### Keyd
@@ -166,8 +141,17 @@ sudo systemctl enable powertop.service --now
     - (assuming this file is in ~/dotfiles/)
 
 ```bash
-source ~/dotfiles/.spicy.bashrc
+source ~/dotfiles/.bashrc.spicy
 ```
+
+## For Windows Plebians
+### PowerToys
+- Makes Win 11 actually usable
+- Can rebind capslock to ctrl
+- Can allow clicking and dragging windows while holding `super`
+
+### Fixing MicroSoft's Bad Decisions
+- [Install country flag emojis on Win 11](https://github.com/Chasmical/flag-emojis-for-windows)
 
 ## References
 > [Dreams of Autonomy - Stow][vid1]
@@ -175,3 +159,5 @@ source ~/dotfiles/.spicy.bashrc
 <!-- Links -->
 [vid1]: https://www.youtube.com/watch?v=y6XCebnB9gs&ab_channel=DreamsofAutonomy
 [term-font]: https://www.nerdfonts.com/font-downloads
+[starship]: https://starship.rs/
+[ghostty]: https://ghostty.org/

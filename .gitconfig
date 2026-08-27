@@ -1,6 +1,3 @@
-[http]
-    sslVerify = false
-
 [commit]
     template = ~/.config/git/.gitmessage
 
