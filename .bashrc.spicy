@@ -41,5 +41,6 @@ stty -ixon
 # Biiiiig history
 HISTSIZE=500000
 HISTFILESIZE=500000
+shopt -s histappend
 
 # vim: set filetype=bash :
